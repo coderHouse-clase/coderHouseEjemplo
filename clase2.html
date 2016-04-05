@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UFT-8">
+	<title>Segunda clase</title>
+</head>
+<body>
+
+	<p>Probando el sitio web</p>
+	<hr> <hr /> <!-- para xhtml -->
+
+	<i></i> <!-- para iconos en algunas paginas -->
+	<img src=""> <!-- imagen-->
+
+	Clase 1
+	<section> </section> <!-- mas semanticos definen las secciones que a su vez pueden ir sin articulos -->
+	<nav></nav><!-- define la navegación, puede haber mas de 1, ej de mi sitio, un artículo, etc -->
+	<article></article> <!-- mas semanticos van dentro de 1 seccion pero puede funcionar sin ella -->
+	<aside> </aside><!-- contenido que no tiene relacion con contenido de mi pag (ej publicidad, estadísticas, etc) que se puede eliminar de una manera sencilla de un PC a un móvil -->
+	<main> </main> <!-- para definir el contenido principal de la pag-->
+	<header></header>
+	<footer></footer> <!-- no es exclusivo para una pag web tb puede ser fin de seccion en la pag web -->
+
+	Clase2
+	<h1>Primer Nivel</h1> <!-- etiqueta de títulos o bajadas H1 puede ir sola 1 vez, el título principal, si tengo varios títulos es mejor tirarlos en H2 -->
+	<h2>Segundo nivel</h2>
+	<h3>Tercer Nivel</h3>
+		<p><b>Párrafo de texto</b> Lorem Ipsum is simply dummy text of the printing and <strong>typesetting industry</stong>. Lorem Ipsum has been the industry's sum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			<br><br>
+		<em>Lorem Ipsum </em>is simply <i>dummy</i> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a typning Lorem Ipsum passages, recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><!-- es para escribir un párrafo, si no le coloco <br /> no hay salto de línea, escribe todo -->
+		<br>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <small> It has survived </small><!-- tipografía mas pequeña-->, but also the leap into electronic typesetting, remaining essentially unchanged. It was <sub>popularised</sub><!-- sub indice --> in the 1960s with the <sup><!-- super indice-->release of Letraset</sup> sheets containing <del>Lorem Ipsum passages</del><!-- stachar el texto-->, and more recently <mark>with desktop publishing</mark><!-- marcar el texto--> software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+		<pre>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+			It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially lease of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</pre> <!-- pre es un párrafo predefinido que reconoce los saltos de párrafo -->
+		<strong></strong><!-- resaltar, puedo colocarle color en CSS para que cambie de color por ejemplo si paso el cursor encima-->
+		<b></b><!-- motivo estético, no se usa en CSS porque en Css defino eso -->
+		
+		<ol>
+			<li>lalala</li>
+			<li>lalala</li>
+		</ol><!-- lista ordenada con números-->
+
+		<ul>
+			<li>lalala</li>
+			<li>lalala</li>
+		</ul><!-- lista desordenada-->
+
+	<table>
+		<tr><!--fila-->
+			<td>12345</td>	<!-- definiciones de mi fila-->
+				<colgroup>
+					<col>a b c d</col><!-- no puedo agregar columnas sin colgroup-->
+				</colgroup><!--grupo de columnas-->
+			<td>67890</td>
+			<td>JJJJJJ</td>
+		</tr>
+		<tr>
+			<td>uno</td>	<!-- definiciones de mi fila-->
+			<td>dos</td>
+			<td>tres</td>
+		</tr><!--fila-->
+		
+	</table>
+	<table>
+		<thead>
+			<th> abc</th><!-- define una fila que puede ir en negrita-->
+		</thead><!--encabezado y puedo definir que tengo 3 categorías-->
+		<tbody>
+			<th> cuerpo</th>
+			<th> cuerpo</th>
+		</tbody> <!-- define el cuerpo de la tabla-->
+		<tfoot>
+			<th> Final</th>
+		</tfoot> <!-- define el footer o fin de una tabla-->
+	</table>
+
+		<em></em><!-- enfatizar en cursiva puede ser de otro color CSS-->
+		<del></del><!-- stachar el texto-->
+
+	<h6>Último Nivel</h6><!-- van por niveles-->
+	<hr> <!-- abreviación de horizontal y lo que hace es agregar una línea de separación-->
+	<form action="hola.php" method="post"><!-- post traer la información que ingresó el usr al servidor-->"get" <!-- llevar la info del servidor a usr--> "delete"<!-- imperativa borra la info--> "pull"> <!-- imperativa de trae la info-->
+		<fieldset>
+			<select name="talles">
+				<optgroup label="adultos">
+					<option value="L">Large</option>
+					<option value="M">Medium</option>
+					<option value="S">Small</option>
+				</optgroup>
+	
+				<optgroup label="niños">
+					<option value="L">Large</option>
+					<option value="M">Medium</option>
+					<option value="S">Small</option>
+				</optgroup>
+
+		<fieldset>
+			<legend>Datos personales</legend>
+				<label for="campo_nombre"><!-- asociado al nompre de un imput linquea el label con el imput y deben llamarse igual-->Nombre</label>
+				<input type="text" name="campo_nombre">
+				<label for="campo_correo"><!-- asociado al nompre de un imput-->e-mail</label><!-- permite enviar el correo al chequearlo--> 
+				<input type="email" name="campo_correo" placeholder="correopredeterminado@valido.com">
+				
+		</fieldset><!-- delimito secciones--> 
+		<fieldset>
+			<legend>Educación</legend><!-- lo que va dentro del formulario lo separo en distintas partes--> 
+			hombre:<input type="radio" name="sexo" id="H"> <!-- solo marco uno, es un campo para eligir --> 
+			mujer:<input type="radio" name="sexo" id="M"> 
+			<br />
+			<textarea></textarea> <!-- zona para agregar contenido pero que se adapta a lo que uno necesite --> 
+		</fieldset>
+		<fieldset>
+			<legend>Experiencia Laboral</legend>
+			<input type="submit" value="Enviar formulario"> <!-- enviar la accion --> 
+		</fieldset>
+	</form><!-- formulario... una interacción entre el usr y la plataforma-->
+	<br />
+
+	<a href="https://www.google.com">Google</a>
+	<br />
+
+	<a href="#pie_pagina">Link</a><!-- link interno--> 
+	<br />
+
+	<a href="/contacto.html">contacto</a><!-- link referencial / relativo--> 
+
+	<br />
+	<audio src="audio.ogg" controls loop autoplay>
+		<p>Mi primer audio</p>
+	</audio>
+
+	<br />
+	<audio  controls loop autoplay>
+		<source src="foo.ogg" type="audio/ogg">
+		<source src="foo.mp3" type="audio/omp3">
+	</audio>
+
+	<br />
+
+	<video src="mivideo.ogg" controls>
+		<p>Mi primer audio</p>
+	</video>
+
+	<br />
+	<video  controls loop autoplay>
+		<source src="foo.ogg" type="video/ogg"><!-- mas liviano el ogg que mp3 o mp4--> 
+		<source src="foo.mp4" type="video/mp4">
+	</video>
+	<footer id="pie_pagina">pajml
+	<a href="stop">Pie</a>
+	</footer>
+
+</body>
+
+</html>
